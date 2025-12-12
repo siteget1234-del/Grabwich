@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Facebook, MapPin } from 'lucide-react';
+import { Phone, Facebook, MapPin, ExternalLink } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 
@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* WhatsApp/Call Card */}
           <Card className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-orange-300">
             <CardContent className="p-8 text-center">
@@ -66,17 +66,34 @@ const Contact = () => {
           </Card>
         </div>
 
-        {/* Location Info */}
-        <div className="max-w-2xl mx-auto mt-12 text-center">
+        {/* Location Info with Google Maps */}
+        <div className="max-w-2xl mx-auto">
           <div className="bg-orange-50 rounded-2xl p-8 border-2 border-orange-200">
             <MapPin className="w-12 h-12 text-orange-600 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Find Us</h3>
-            <p className="text-lg text-gray-700">
-              Local, fresh, and fast — just how breakfast should be.
-            </p>
-            <p className="text-gray-600 mt-2">
-              Check our Facebook for current location and hours!
-            </p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Visit Us</h3>
+            <div className="text-center space-y-2">
+              <p className="text-lg font-semibold text-gray-900">
+                Mary Lou's Laundromat
+              </p>
+              <p className="text-lg text-gray-700">
+                1755 W 18th Ave<br />
+                Eugene, OR 97402<br />
+                United States
+              </p>
+              <div className="pt-4">
+                <Button
+                  variant="outline"
+                  className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white transition-all"
+                  onClick={() => window.open('https://maps.app.goo.gl/JFPCE16jFucWCg2A6', '_blank')}
+                >
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  View on Google Maps
+                </Button>
+              </div>
+              <p className="text-gray-600 mt-4 text-sm">
+                Check our Facebook for current hours and daily specials!
+              </p>
+            </div>
           </div>
         </div>
       </div>

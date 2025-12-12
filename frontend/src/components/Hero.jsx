@@ -17,9 +17,9 @@ const Hero = () => {
           {/* Main Logo/Brand Image */}
           <div className="mb-8 animate-in fade-in slide-in-from-bottom duration-700">
             <img
-              src="https://customer-assets.emergentagent.com/job_00f31d1a-3172-4d0d-bf8b-94dc51647531/artifacts/z19lyvbv_FB_IMG_1765563429882.jpg"
-              alt="Grab'Wich Logo"
-              className="w-64 h-64 mx-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+              src="https://customer-assets.emergentagent.com/job_morning-sandwiches/artifacts/u6sva0an_1000136307-removebg-preview.png"
+              alt="Grab'Wich - Handmade Breakfast in a Hurry"
+              className="w-80 h-80 mx-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
             />
           </div>
 
@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-6 mb-10 animate-in fade-in slide-in-from-bottom duration-700 delay-300">
             <div className="flex items-center space-x-2 text-gray-700">
               <MapPin className="w-5 h-5 text-orange-600" />
-              <span className="font-medium">Local & Fresh</span>
+              <span className="font-medium">Eugene, OR</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-700">
               <Clock className="w-5 h-5 text-orange-600" />
@@ -67,7 +67,12 @@ const Hero = () => {
 
           {/* Contact Info */}
           <div className="mt-8 text-gray-600 animate-in fade-in duration-700 delay-500">
-            <p className="text-lg">📞 Call/WhatsApp: <a href="tel:+15415564566" className="text-orange-600 hover:underline font-medium">+1 (541) 556-4566</a></p>
+            <p className="text-lg">
+              📞 Call/WhatsApp: <a href="tel:+15415564566" className="text-orange-600 hover:underline font-medium">+1 (541) 556-4566</a>
+            </p>
+            <p className="text-md mt-2">
+              📍 <a href="https://maps.app.goo.gl/JFPCE16jFucWCg2A6" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">1755 W 18th Ave, Eugene, OR 97402</a>
+            </p>
           </div>
         </div>
       </div>

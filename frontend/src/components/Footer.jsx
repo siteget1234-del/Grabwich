@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Facebook } from 'lucide-react';
+import { Phone, Facebook, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -98,7 +98,7 @@ const Footer = () => {
                 }`}
                 style={{ transitionDelay: '1200ms' }}
               >
-                <div className="text-6xl">&#128076;</div>
+                <div className="text-6xl">👊</div>
               </div>
             </div>
           </div>
@@ -167,19 +167,29 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Hours */}
+          {/* Location */}
           <div className="text-center md:text-right">
-            <h4 className="text-lg font-bold text-orange-400 mb-4">Follow Us</h4>
-            <p className="text-gray-300">
-              Check our Facebook page for current location, hours, and daily specials!
-            </p>
+            <h4 className="text-lg font-bold text-orange-400 mb-4">Location</h4>
+            <div className="space-y-2">
+              <a
+                href="https://maps.app.goo.gl/JFPCE16jFucWCg2A6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center md:justify-end space-x-2 text-gray-300 hover:text-orange-400 transition-colors"
+              >
+                <MapPin className="w-4 h-4" />
+                <span>Eugene, OR</span>
+              </a>
+              <p className="text-sm text-gray-400">Mary Lou's Laundromat</p>
+              <p className="text-sm text-gray-400">1755 W 18th Ave</p>
+            </div>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Grab'Wich. All rights reserved.</p>
-          <p className="mt-2 text-sm">Made with &#10084;&#65039; for breakfast lovers everywhere</p>
+          <p className="mt-2 text-sm">Made with ❤️ for breakfast lovers everywhere</p>
         </div>
       </div>
     </footer>
